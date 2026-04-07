@@ -28,7 +28,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.1",
-        "blackcube/dcore": "^1.0",
+        "blackcube/dcore": "@dev",
         "psr/http-message": "^2.0",
         "psr/http-server-middleware": "^1.0",
         "yiisoft/injector": "^1.2"
