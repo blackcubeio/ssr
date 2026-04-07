@@ -1,0 +1,89 @@
+{
+    "name": "blackcube/ssr",
+    "description": "Server-side routing and rendering bridge for blackcube/dcore",
+    "keywords": [
+        "cms",
+        "routing",
+        "slug",
+        "seo",
+        "psr-7",
+        "psr-15",
+        "server-side-rendering"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/blackcubeio/ssr",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Philippe Gaultier",
+            "email": "philippe@blackcube.io"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/blackcubeio/ssr/issues",
+        "source": "https://github.com/blackcubeio/ssr"
+    },
+    "readme": "README.md",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.1",
+        "blackcube/dcore": "^1.0",
+        "psr/http-message": "^2.0",
+        "psr/http-server-middleware": "^1.0",
+        "yiisoft/injector": "^1.2"
+    },
+    "suggest": {
+        "yiisoft/aliases": "Required for YiiSsrRoutingMiddleware (^3.1)",
+        "yiisoft/assets": "Required for YiiSsrRoutingMiddleware — JSON-LD asset injection (^5.1)",
+        "yiisoft/cache": "Required for HandlerRegistry caching (^3.2)",
+        "yiisoft/html": "Required for YiiSsrRoutingMiddleware — XeoInjection HTML tags (^3.12)",
+        "yiisoft/request-provider": "Required for YiiSsrRoutingMiddleware (^1.3)",
+        "yiisoft/session": "Required for YiiSsrRoutingMiddleware (^3.0)",
+        "yiisoft/view": "Required for YiiSsrRoutingMiddleware — XeoInjection view layer (^12.2)",
+        "yiisoft/yii-view-renderer": "Required for YiiSsrRoutingMiddleware — WebViewRenderer injections (^7.4)",
+        "slim/slim": "Required for SlimSsrRoutingMiddleware (^4.14)",
+        "slim/psr7": "PSR-7 implementation for Slim (^1.7)",
+        "slim/twig-view": "Twig template rendering for Slim (^3.4)",
+        "php-di/php-di": "DI container for Slim (^7.0)",
+        "illuminate/http": "Required for LaravelSsrRoutingMiddleware (^12.0)"
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.3",
+        "codeception/module-asserts": "^3.3",
+        "httpsoft/http-message": "^1.1",
+        "vlucas/phpdotenv": "^5.6",
+        "yiisoft/aliases": "^3.1",
+        "yiisoft/assets": "^5.1",
+        "yiisoft/cache": "^3.2",
+        "yiisoft/db-migration": "^2.0",
+        "yiisoft/db-mysql": "^2.0",
+        "yiisoft/di": "^1.4",
+        "yiisoft/error-handler": "^4.3",
+        "yiisoft/html": "^4.0",
+        "yiisoft/request-provider": "^1.3",
+        "yiisoft/session": "^3.0",
+        "yiisoft/test-support": "^3.2",
+        "yiisoft/view": "^12.2",
+        "yiisoft/yii-view-renderer": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blackcube\\Ssr\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Blackcube\\Ssr\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-devel": "1.x-dev"
+        },
+        "config-plugin-file": "config/configuration.php"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
